@@ -32,4 +32,4 @@ $sqlip="select host from information_schema.processlist WHERE ID=connection_id()
         if ($resultado = $this->objconn->query($sql)) {
             /* liberar el conjunto de resultados */
             $this->objconn->close();
-        }
+        }   
