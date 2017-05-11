@@ -1,5 +1,7 @@
 /*1°Crear Repositorio
 2°Crear localmente un proyecto
+3° Commit
+4° Push
 */
 
 <!DOCTYPE html>
