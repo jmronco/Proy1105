@@ -17,7 +17,7 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <form method="post" action="modulos/prod_agregar.php">
+        <form method="post" action="modulos/AgregarProducto.php">
             <div><label>Nombre:</label><input type="test" name="nombre"></div>
             <div><label>Total USD:</label><input type="test" name="totalusd"></div>
             <div><label>Año:</label><input type="test" name="ano"></div>

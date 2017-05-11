@@ -1,5 +1,5 @@
 <?php
-include '../lib/conexion.php';
+include '../lib/Conexion.php';
 
 /*Instancia objeto de conexión*/
 $conn=new Conexion;
