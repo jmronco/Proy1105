@@ -24,3 +24,12 @@ echo $sql;
           $oProducto= new Producto($fila["nombre"],$fila["totalusd"],$fila["ano"]);
           $aProductos[$i]=$oProducto;
          }*/
+
+$sqlip="select host from information_schema.processlist WHERE ID=connection_id();";
+        $resultado = $this->objconn->query($sqlip);
+        
+         /* Consultas de selección que devuelven un conjunto de resultados */
+        if ($resultado = $this->objconn->query($sql)) {
+            /* liberar el conjunto de resultados */
+            $this->objconn->close();
+        }
