@@ -3,7 +3,7 @@ class Conexion{
     var $objconn;
     
     /*Método de conexión*/
-    var $dbusr="";
+    var $dbusr="root";
     var $dbpwd="avaras08";
     var $dbhost="localhost";
     var $dbname="exportaciones"; 

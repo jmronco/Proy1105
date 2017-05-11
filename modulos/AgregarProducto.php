@@ -6,7 +6,7 @@ $conn=new Conexion;
 
 if($conn->conectar()){
 $nom=$_POST["nombre"];
-$ntotusd=$_POST["totalusd"];
+$totalusd=$_POST["totalusd"];
 $ano=$_POST["ano"];
 /* 
  * To change this license header, choose License Headers in Project Properties.
@@ -14,8 +14,9 @@ $ano=$_POST["ano"];
  * and open the template in the editor.
  */
 
-$sql="INSERT INTO productos(nombre,totalusd,ano) values('$nom,$totalusd,$ano')";
+$sql="INSERT INTO productos(nombre,totalusd,ano) values('$nom',$totalusd,$ano)";
 
+$conn->objconn->query($sql);
 echo $sql;
 }
 /*
@@ -25,11 +26,6 @@ echo $sql;
           $aProductos[$i]=$oProducto;
          }*/
 
-$sqlip="select host from information_schema.processlist WHERE ID=connection_id();";
-        $resultado = $this->objconn->query($sqlip);
         
-         /* Consultas de selección que devuelven un conjunto de resultados */
-        if ($resultado = $this->objconn->query($sql)) {
-            /* liberar el conjunto de resultados */
-            $this->objconn->close();
-        }   
+        
+         
